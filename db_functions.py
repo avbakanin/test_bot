@@ -202,7 +202,6 @@ def get_user_id(tg_user_id):
 		tg_us_id = int(tg_user_id)
 		sqlite_select = '''select user_id from bot_users where tg_user_id = ?'''
 		cur.execute(sqlite_select, (tg_us_id,))
-
 		us_id = cur.fetchone()
 		print("user_id получен")
 
@@ -226,10 +225,8 @@ def check_code(code):
 		cur = connection.cursor()
 		print("Подключен к SQLite")
 
-		my_code = code
 		sqlite_select = '''select region_name from regions_code where code_id = ?'''
-		cur.execute(sqlite_select, (my_code,))
-
+		cur.execute(sqlite_select, (code,))
 		region_name = cur.fetchone()
 		print("данные по региону получены")
 
