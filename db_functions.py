@@ -1,5 +1,17 @@
 import sqlite3
 
+class Db_connected_funcs():
+
+	def __init__(self):
+		self.connection = sqlite3.connect('db/test_bot.db')
+
+	def start_connection(self):
+		try:
+			self.connection
+			cur = self.connection.cursor()
+			print("Подключен к SQLite")
+		except sqlite3.Error as error:
+			print("Ошибка при подключении к sqlite:", error)
 
 def insert_bot_users(user_id, tg_user_id, user_first_name, user_last_name, username, first_start_bot_date):
 	try:
