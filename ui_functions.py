@@ -1,5 +1,6 @@
 from telebot import types
 
+
 def create_buttons():
     reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     info_button = types.KeyboardButton("Вывести весь список")
