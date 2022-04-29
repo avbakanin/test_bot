@@ -2,7 +2,7 @@ import sqlite3
 
 
 class DbConnectedFuncs:
-	@staticmethod
+
 	def start_connection(self, db):
 		"""подключение к бд"""
 		connection = sqlite3.connect(db, check_same_thread=False)
@@ -11,7 +11,7 @@ class DbConnectedFuncs:
 
 		return connect_info
 
-	@staticmethod
+
 	def stop_connection(self, connection, cur):
 		"""отключение от бд"""
 		connection.commit()

@@ -3,5 +3,5 @@ import telebot
 
 class Bot:
 
-    token = '5390283798:AAH_xdPbUsLVYxVtiozJoLVpufsdyW4yy90'
+    token = '5369503559:AAE5PB2FlEfSXw8tAONDrfcmGf2KDflfSVI'
     bot = telebot.TeleBot(token)
