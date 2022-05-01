@@ -2,7 +2,7 @@ import db_functions
 import constants
 import datetime
 
-my_bot = constants.Bot()
+my_bot = constants.BotConstants()
 bot = my_bot.bot
 db = db_functions.DbConnectedFuncs()
 

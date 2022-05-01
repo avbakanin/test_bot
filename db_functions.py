@@ -11,7 +11,6 @@ class DbConnectedFuncs:
 
 		return connect_info
 
-
 	def stop_connection(self, connection, cur):
 		"""отключение от бд"""
 		connection.commit()

@@ -7,9 +7,8 @@ def start_message(message):
     user_info = logic_functions.get_user_info(message)
     logic_functions.log_user_connection_from_start(user_info)
     logic_functions.bot.send_message(message.from_user.id,
-                                     "Привет, %s!\n\n"
-                                     "Для того чтобы узнать название федеральной территориальной единицы, "
-                                     "введите ее код:" % message.from_user.first_name,
+                                     "Здравствуйте, %s!\n\n"
+                                     "Введите код региона:" % message.from_user.first_name,
                                      reply_markup=ui_functions.create_buttons())
 
 
